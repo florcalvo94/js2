@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Monoton&display=swap');
+
+
+h1 {
+    font-family: 'Monoton', cursive;
+}
+
+h2 {
+    font-family: 'Bungee', cursive;
+    font-size: 1.5em;
+}
+
+h3 {
+    font-family: 'Bungee', cursive;
+    font-size: 1em;
+}
+
+.card {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    color: red;
+}
+
+.local {
+    height: 30px;
+    width:20px;
+    background-color: red;
+}
