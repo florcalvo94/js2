@@ -349,3 +349,36 @@ form.onsubmit = (e) => {
 
 
 //Tercera forma No es recomendada ya que no es buena práctica utilizar el js en el html.*/
+
+let botonGenerar = document.getElementById("generarTicket");
+const inputName = document.getElementById('inputName');
+const inputLastName = document.getElementById("inputLastName");
+const inputShow = document.getElementById("inputShow");
+const show = document.getElementsByClassName('ticket');
+let cart = document.getElementById("cart");
+
+
+botonGenerar.addEventListener('click', mostrarTicket);
+
+function mostrarTicket(event) {
+  event.preventDefault();
+  const inputNameValue = inputName.value;
+  const inputLastNameValue = inputLastName.value;
+  const showValue = inputShow.options[inputShow.selectedIndex].value;
+ 
+
+  generarTicket(inputNameValue, inputLastNameValue, showValue, cart);
+}  
+
+ function generarTicket(inputName, inputLastName, inputShow, element) {
+  const card = document.createElement('div');
+
+  card.className ="card m-2 p-3";
+
+  card.innerHTML = ` <p>Nombre: ${inputName} </p>
+  <p> Apellido: ${inputLastName} </p>
+  <p> Show: ${inputShow} </p>
+  `;
+
+  element.appendChild(card);
+}
