@@ -125,3 +125,12 @@ function mostrarTicket(event) {
 }
 
 
+$('#cart').append("<button id='mostrarBtn'>Mostrar Carrito</button>");
+$("#cart").append("<div id='cartItem1' style='display:none'><h6>Mochila</h6><button>Comprar</button></div><div id='cartItem2' style='display:none'><h6>Taza</h6><button>Comprar</button></div><div id='cartItem3' style='display:none'><h6>Gorra</h6><button>Comprar</button></div>");
+
+$("#mostrarBtn").click(()=> {
+  $("#cartItem1").toggle();
+  $("#cartItem2").toggle();
+  $("#cartItem3").toggle();
+});
+
