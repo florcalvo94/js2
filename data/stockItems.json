@@ -1,0 +1,24 @@
+{
+    "stockItems":[
+        {
+            "image": "images/tee.jpg",
+            "name": "remera",
+            "price": 500
+        },
+        {
+            "image": "images/hoodie.jpg",
+            "name": "buzo",
+            "price": 1000
+        },
+        {
+            "image": "images/mug.jpg",
+            "name": "taza",
+            "price": 100
+        },
+        {
+            "image": "images/hat2.jpg",
+            "name": "gorra",
+            "price": 300
+        }
+    ]
+}

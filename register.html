@@ -16,16 +16,16 @@
           <a class="nav-link active" aria-current="page" href="index2.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="merchandise.html">Merchandise</a>
+          <a class="nav-link" href="#">Merchandise</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="register.html">Register</a>
+          <a class="nav-link" href="#">Register</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="cart.html">Shopping cart</a>
+          <a class="nav-link" href="#">Shopping cart</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="eticket.html">E-ticket</a>
+          <a class="nav-link" href="#">E-ticket</a>
         </li>
 
         <li class="nav-item">
@@ -103,9 +103,43 @@
               Precio:<span> $0</span>
             </div>
             
-            
     </section>
-     
+     <section class="row">
+      <div class="col">
+      <h2 id="register">Generá tu e-ticket</h2>
+      <form class="row g-3">
+        <div class="col-md-6">
+          <label for="inputName" class="form-label">Nombre</label>
+          <input type="text" class="form-control input-sm" id="inputName">
+        </div>
+        <div class="col-md-6">
+          <label for="inputLastName" class="form-label">Apellido</label>
+          <input type="text" class="form-control input-sm" id="inputLastName">
+        </div>
+        <div class="col-6">
+          <label for="inputAddress" class="form-label">Show</label>
+          <select class="form-control form-control-sm" id="inputShow">
+            <option>Foo Fighters </option>
+            <option>Maria Becerra</option>
+            <option>Tini Stoessel</option>
+            <option>Juan Ingaramo</option>
+          </select>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Acepto los terminos y condiciones
+            </label>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary" id="generarTicket"> Generar ticket </button>
+      </form>
+    </div>
+      <div class="col" id="cart">
+        <h3 class="carrito">Carrito de Compras</h3>
+    </div>
+  </section>
     <footer>
       
 
